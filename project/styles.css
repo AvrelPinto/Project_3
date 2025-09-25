@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@700&display=swap');
+
+body {
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 0;
+  background: #F5F3E7; 
+  color: #333333;
+  scroll-behavior: smooth;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #C9A66B;
+}
+
+
+.navbar {
+  background: rgba(245, 243, 231, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0B3D2E !important;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #333333 !important;
+  margin-left: 18px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #C9A66B !important;
+  transform: scale(1.08);
+}
+
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(11, 61, 46,0.4), rgba(11, 61, 46,0.6)),
+              url("tower.jpg") no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #F5F3E7;
+  position: relative;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+.hero .btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  background: #0B3D2E;
+  color: #F5F3E7;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #C9A66B;
+  color: #0B3D2E;
+  transform: scale(1.05);
+}
+
+
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #0B3D2E;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #C9A66B;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+
+.card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  background: #F5F3E7;
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 8px 16px 28px rgba(0,0,0,0.25);
+  border-left: 4px solid #C9A66B;
+}
+
+.card-title {
+  color: #0B3D2E;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+
+.list-group-item {
+  background: #F5F3E7;
+  border: none;
+  border-left: 6px solid #0B3D2E;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  padding: 18px 22px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: 'Lora', serif;
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  transform: translateX(5px);
+  border-left-color: #C9A66B;
+  background: #EDE8DD;
+}
+
+
+#things-to-do ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+#things-to-do ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #1B3B2E;
+}
+
+#things-to-do ul li::before {
+  content: '▹'; 
+  position: absolute;
+  left: 0;
+  color: #C9A66B;
+  font-size: 1.2rem;
+  top: 0;
+}
+
+
+.timeline .event {
+  position: relative;
+  background: #F5F3E7;
+  border-left: 4px solid #0B3D2E;
+  padding: 18px 20px 18px 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-family: 'Lora', serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.timeline .event::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  width: 12px;
+  height: 12px;
+  background: #C9A66B;
+  border-radius: 50%;
+}
+
+.timeline .event:hover {
+  background: #EDE8DD;
+  transform: scale(1.02);
+}
+
+
+#contact a {
+  color: #0B3D2E;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+#contact a:hover {
+  color: #C9A66B;
+}
+
+#contact .btn {
+  margin-top: 15px;
+  background: #0B3D2E;
+  color: #F5F3E7;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#contact .btn:hover {
+  background: #C9A66B;
+  color: #0B3D2E;
+  transform: scale(1.05);
+}
+
+
+footer {
+  background: #333333;
+  color: #ddd;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-family: 'Lora', serif;
+}
+
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media (max-width: 768px) {
+  section h2 {
+    font-size: 1.8rem;
+  }
+  #things-to-do ul li, .list-group-item, .timeline .event {
+    font-size: 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+
+#kdd-milk, #kdd-milk .card {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin-bottom: 3rem;
+  font-family: 'Merriweather', serif; 
+  color: #3e3e3e;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#kdd-milk .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+#kdd-milk h2.card-title {
+  font-family: 'Playfair Display', serif;
+  color: #2a2a2a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #d4c7b0; 
+  padding-bottom: 0.5rem;
+}
+
+#kdd-milk p {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #4b4b4b;
+  margin-bottom: 1rem;
+}
+
+#kdd-milk img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  #kdd-milk h2.card-title {
+    font-size: 1.7rem;
+  }
+  #kdd-milk p {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
